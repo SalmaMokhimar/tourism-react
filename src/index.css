@@ -1,0 +1,13 @@
+:root {
+  --mainColorGreen:#7fbe41de
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+  padding-left:0 !important
+}
+.text-main {
+  color:var(--mainColorGreen)
+}

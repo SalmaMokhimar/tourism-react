@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Merriweather&family=Modak&family=Poppins:wght@100;200;300;400;500;600&family=Work+Sans&display=swap');.footer {
+  background-image: linear-gradient(
+      rgba(9, 16, 13, 0.88),
+      rgba(9, 16, 13, 0.88)
+    ),
+    url("../../assets/footer-bg.png");
+  background-size: cover;
+  padding-top:50px;
+  color:#d7d3d3;
+  h4 {
+    font-family: 'Merriweather', serif;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom:-8px;
+      left:0;
+      background: linear-gradient(90deg,var(--mainColorGreen),transparent);
+      width: 60px;
+      height: 2px;
+    }
+  }
+  ul li {
+    margin-bottom:15px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+  }
+  .icon {
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--mainColorGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+      background-color: var(--mainColorGreen);
+      color:#fff
+    }
+  }
+  .footer-end {
+    font-size:14px;
+    border-top:1px solid #3a3a3a85
+  }
+}

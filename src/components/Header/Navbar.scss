@@ -1,0 +1,109 @@
+$small: 200px;
+$medium: 1023px;
+$large:1200px;
+@keyframes scale-display {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+    -webkit-transform: scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+    -webkit-transform: scale(1);
+	}
+}
+
+@media screen and (min-width: $small) and (max-width: $medium) {
+
+    #collabsed-menu {
+        padding: 30px 20px!important;
+        height: 100%;
+        width: 280px;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left:0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: transform .3s ease-in;
+        box-shadow: 0 2px 20px rgb(0 0 0 / 3%);
+        overflow-y: auto; 
+        align-content: flex-start;
+        
+        &.opened{
+            
+            transform: translateX(0);
+            
+        }
+        
+        ul:not(.drop){
+            display: block;
+            text-align: left;
+            padding: 35px 10px 10px 0;
+            .drop {             
+                z-index: 1000;
+                display: none;
+                transition: all 1s ease-out;
+                opacity: 0;
+                visibility: unset;
+   
+                position: static;
+              
+                min-width: auto;
+                background: #fff;
+                a{
+                    color:#000;
+                }
+                &.opened{
+                    z-index: 1000;
+                    opacity: 1;
+                    display: block;
+                    animation: scale-display .3s;
+                    padding-bottom: 1rem;
+
+                }
+                }
+            li {
+                position: relative;
+                padding: 0 5px;
+               
+                a{
+                    padding: 10px 0;
+                    display: block;
+                    font-weight: 500;
+                }:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 25px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    border-radius: 30px;
+                    display: block;
+                    background: linear-gradient(90deg,var(--primary-color1),transparent);
+                    opacity: 1;
+                    transition: all .5s ease-out 0s;
+                }
+                .icon {
+                    color: #09100d;
+                    position: absolute;
+                    right: 0;
+                    top:0;
+                    
+                }
+                
+            }
+        }
+        .nav_phone{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+}
