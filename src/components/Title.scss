@@ -1,0 +1,26 @@
+.section__title{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    h3{
+        display: inline-block;
+        margin: 0;
+        padding-right: 20px;
+        border: 1px solid #f1f1f1;
+        padding: 8px 16px;
+        background: #fbfbfb;
+        text-transform: capitalize;
+        font-weight: 700;
+        color:gray;
+        position: relative;
+    }
+
+&::after{
+    position: absolute;
+    top: 51%;
+    content: '';
+    background: #f1f1f1;
+    height: 1px;
+    width: 100%;
+}
+}

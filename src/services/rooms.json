@@ -1,0 +1,35 @@
+[
+  {
+    "id":1,
+    "imgURL": "room-1.jpg",
+    "description": "super room",
+    "price": 1200,
+    "alt":"room pic",
+    "rate":4
+  },
+  {
+    "id":2,
+    "imgURL": "room-2.jpg",
+    "description": "amazing room",
+    "price": 450,
+    "alt":"room pic",
+    "rate":3
+    },
+    {
+    "id":3,
+    "imgURL": "room-3.jpg",
+    "description": "Double room",
+    "price": 978,
+    "alt":"room pic",
+    "rate":5
+    },
+    {
+    "id":4,
+    "imgURL": "room-4.jpg",
+    "description": "Single room",
+    "price": 659,
+    "alt":"room pic",
+    "rate":3.5
+    }
+      
+  ]

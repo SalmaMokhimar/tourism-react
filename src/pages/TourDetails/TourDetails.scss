@@ -1,0 +1,102 @@
+.bread-crumbs-container{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0, 0, 1, 0.356) 0%),url("../../assets/breadcrumb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 5rem;
+    h1{
+        font-weight: 600;
+        &::before {       
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background: white;
+        left: 0;
+        right: 0;
+        top: 25%;
+        margin-right: auto;
+        margin-left: auto;
+        position: absolute;
+        }
+    }
+    .breadcrumb{
+        margin-bottom: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 0 10px #ccc;
+        width: 40%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        bottom: -15%;
+        .breadcrumb-item{
+            a{  
+                color:black;
+            }
+            
+            &.active {
+                color: #ffb606;
+            }
+        }
+        
+    }
+}
+section{
+    margin-bottom: 3rem;
+    
+    h2{
+        text-transform: uppercase;
+        color: gray;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .carousel-container
+    {
+        margin:2rem 0;
+    }
+}
+aside{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    .rooms_slider{
+        box-shadow: 0 0 10px #ededed;
+        padding: 15px;
+        
+    }
+    .contact_us_container{
+        background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0, 0, 1, 0.541) 0%), url("../../assets/adbg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 2rem 0;
+        padding:1.5rem 2rem;
+
+        h3{
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+
+}
+
+
+.breadcrumb-item+.breadcrumb-item::before{content:var(--bs-breadcrumb-divider,"|") !important ;}

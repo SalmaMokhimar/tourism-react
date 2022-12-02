@@ -1,5 +1,16 @@
 .header-container {
   padding:1rem 0;
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+  transition: top 0.3s;
+  &.sticky-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
   .container {
     #collabsed-menu{
       align-items: center;
